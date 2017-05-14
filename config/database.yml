@@ -55,7 +55,7 @@ development:
 # Warning: The database defined as "test" will be erased and
 # re-generated from your development database when you run "rake".
 # Do not set this db to the same as development or production.
-test:
+test: &test
   <<: *default
   database: joc_portfolio_test
 
@@ -83,3 +83,6 @@ production:
   database: joc_portfolio_production
   username: joc_portfolio
   password: <%= ENV['JOC_PORTFOLIO_DATABASE_PASSWORD'] %>
+
+cucumber:
+  <<: *test
