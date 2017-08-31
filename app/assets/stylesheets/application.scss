@@ -1,0 +1,65 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+ */
+
+@import "bootstrap-sprockets";
+@import "bootstrap";
+
+
+@font-face {
+	font-family: 'Pacifico';
+	font-style: normal;
+	font-weight: 400;
+	src: local('Pacifico Regular'), local('Pacifico-Regular'), url("../fonts/pacifico.woff") format('woff');
+ }
+
+html, body {
+	margin: 0;
+	padding: 0;
+}
+
+::selection {
+	background-color: #35405f;
+	color: #fff;
+}
+
+*, *:active, *:focus, *:hover {
+	outline: none;
+}
+
+h1, h2, h3, h4, h5,h6 {
+	margin-top: 0;
+}
+
+body {
+	font: 15px/23px "Lucida Sans","Liberation Sans","Lucida Sans Unicode","Lucida Grande",Verdana,Arial,Helvetica,sans-serif;
+	background-color: rgb(224, 247, 246);
+
+}
+
+.btn {
+	transition: 0.4s background linear;
+}
+
+.btn:focus
+{
+	color: #fff;
+}
+
+.block-heading {
+		margin-bottom: 60px;
+}
+
+.block-heading p {
+	font-size: 18px;
+}
